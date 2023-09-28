@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "avenir-next-ultralight";
+    src: url(../fonts/avenir-next/AvenirNext-UltraLight.otf);
+}
+
+@font-face {
+    font-family: "avenir-next-ultralight-italic";
+    src: url(../fonts/avenir-next/AvenirNext-UltraLightItalic.otf);
+}
+
+@font-face {
+    font-family: "avenir-next-regular";
+    src: url(../fonts/avenir-next/AvenirNext-Regular.otf);
+}
+
+@font-face {
+    font-family: "avenir-next-italic";
+    src: url(../fonts/avenir-next/AvenirNext-Italic.otf);
+}
+
+@font-face {
+    font-family: "avenir-next-medium";
+    src: url(../fonts/avenir-next/AvenirNext-Medium.otf);
+}
+
+@font-face {
+    font-family: "avenir-next-medium-italic";
+    src: url(../fonts/avenir-next/AvenirNext-MediumItalic.otf);
+}
+
+@font-face {
+    font-family: "avenir-next-bold";
+    src: url(../fonts/avenir-next/AvenirNext-Bold.otf);
+}
+
+@font-face {
+    font-family: "avenir-next-bold-italic";
+    src: url(../fonts/avenir-next/AvenirNext-BoldItalic.otf);
+}
+
+@font-face {
+    font-family: "avenir-next-demibold";
+    src: url(../fonts/avenir-next/AvenirNext-DemiBold.otf);
+}
+
+@font-face {
+    font-family: "avenir-next-demibold-italic";
+    src: url(../fonts/avenir-next/AvenirNext-DemiBoldItalic.otf);
+}
+
+@font-face {
+    font-family: "avenir-next-heavy";
+    src: url(../fonts/avenir-next/AvenirNext-Heavy.otf);
+}
+
+@font-face {
+    font-family: "avenir-next-heavy-italic";
+    src: url(../fonts/avenir-next/AvenirNext-HeavyItalic.otf);
+}
+
+
+@font-face {
+    font-family: "bodoni-72-book";
+    src: url(../fonts/bodoni-72/Bodoni-72-Book.otf);
+}
+
+@font-face {
+    font-family: "bodoni-72-book-italic";
+    src: url(../fonts/bodoni-72/Bodoni-72-Book-Italic.otf);
+}
+
+@font-face {
+    font-family: "bodoni-72-medium";
+    src: url(../fonts/bodoni-72/Bodoni-72-Medium.otf);
+}
+
+@font-face {
+    font-family: "bodoni-72-medium-italic";
+    src: url(../fonts/bodoni-72/Bodoni-72-Medium-Italic.otf);
+}
+
+@font-face {
+    font-family: "bodoni-72-bold";
+    src: url(../fonts/bodoni-72/Bodoni-72-Bold.otf);
+}
+
+@font-face {
+    font-family: "bodoni-72-bold-italic";
+    src: url(../fonts/bodoni-72/Bodoni-72-Bold-Italic.otf);
+}
+
+@font-face {
+    font-family: "bodoni-72-fatface";
+    src: url(../fonts/bodoni-72/Bodoni-72-Fatface.otf);
+}
+
+@font-face {
+    font-family: "bodoni-72-fatface-italic";
+    src: url(../fonts/bodoni-72/Bodoni-72-Fatface-Italic.otf);
+}
+
+
+@font-face {
+    font-family: "didot-regular";
+    src: url(../fonts/didot/Didot\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "didot-italic";
+    src: url(../fonts/didot/Didot\ LT\ Std\ Italic.otf);
+}
+
+@font-face {
+    font-family: "didot-medium";
+    src: url(../fonts/didot/Didot\ Medium.ttf);
+}
+
+@font-face {
+    font-family: "didot-bold";
+    src: url(../fonts/didot/Didot\ LT\ Std\ Bold.otf);
+}
+
+@font-face {
+    font-family: "didot-bold-italic";
+    src: url(../fonts/didot/Didot\ Bold\ Italic.ttf);
+}
+

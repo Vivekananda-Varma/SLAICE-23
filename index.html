@@ -1,13 +1,979 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SLAICE 23</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Just Started Working...</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Agency - Start Bootstrap Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img src="images/slaice_logo_white.png" alt="..." /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Magazine</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <section class="page-section" id="home">
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Read Our Latest Edition</div>
+                <div class="masthead-heading text-uppercase">Slaice Issue 7</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Read now</a>
+            </div>
+        </header>
+    </section>
+
+    <!-- Magazine Grid-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">From The Latest Issue</h2>
+                <h3 class="section-subheading text-muted">-----------</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Magazine item 1-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <p>Read More <i class="fas fa-plus fa-1x"></i></p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/poems-master.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Poems</div>
+                            <div class="portfolio-caption-subheading text-muted">Indulge in our poems</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Magazine item 2-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <p>Read More <i class="fas fa-plus fa-1x"></i></p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/articles-master.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Articles</div>
+                            <div class="portfolio-caption-subheading text-muted">Get an insight</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Magazine item 3-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <p>Read More <i class="fas fa-plus fa-1x"></i></p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/stories-master.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Short Stories</div>
+                            <div class="portfolio-caption-subheading text-muted">Edgar Allen Poe Fans Assemble
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Magazine item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <p>Read More <i class="fas fa-plus fa-1x"></i></p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/interviews-master.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Interviews</div>
+                            <div class="portfolio-caption-subheading text-muted">Meet our inspirations</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <!-- Magazine item 5-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <p>Read More <i class="fas fa-plus fa-1x"></i></p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/photo-essay-master.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Photo Essays</div>
+                            <div class="portfolio-caption-subheading text-muted">Meet our photographers</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Magazine item 6-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <p>Read More <i class="fas fa-plus fa-1x"></i></p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="images/artwork-master.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Artwork</div>
+                            <div class="portfolio-caption-subheading text-muted">Meet our artists</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <a class="btn btn-primary btn-md mt-5 mb-0" href="#portfolio">
+                    More Issues</a>
+            </div>
+        </div>
+    </section>
+    <!-- About-->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About</h2>
+                <h3 class="section-subheading text-muted">---------</h3>
+            </div>
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="timeline-heading text-capitalize">SLAICE</h2>
+                    <p>Where creativity meets expression, and knowledge takes center stage! Our annual student magazine
+                        is a vibrant showcase of the diverse talents and perspectives of our student body. From
+                        thought-provoking articles and captivating stories to stunning artwork and photography, "Slaice"
+                        is your window into the world of our dynamic student community. Join us on this literary and
+                        artistic journey as we celebrate the voices, ideas, and talents that make our school a hub of
+                        creativity and inspiration.
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        src="images/slaice-placeholder.jpg" role="img" preserveAspectRatio="xMidYMid slice"
+                        focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" />
+                    </img>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="timeline-heading text-capitalize">Sri Aurobindo International Centre of Education</h2>
+                    <p>Sri Aurobindo International Centre of Education, where knowledge is not just a destination but a
+                        transformative journey. Nestled in the serene town of Puducherry, India, our center is a beacon
+                        of holistic education inspired by the teachings of Sri Aurobindo and The Mother. Here, we
+                        believe that education is a spiritual endeavor, nurturing not only the intellect but also the
+                        soul. Join us as we embark on a quest for wisdom, self-discovery, and the harmonious evolution
+                        of mind, body, and spirit.
+                    <div class="col-md-12">
+                        <a class="btn btn-primary btn-sm mt-2 mb-3" href="https://www.saice.in/">
+                            Visit </a>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        src="images/saice-placeholder.jpg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" />
+                    </img>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="timeline-heading text-capitalize">Sri Aurobindo Ashram</h2>
+                    <p>the Sri Aurobindo Ashram. Situated in the tranquil and spiritually charged city of Puducherry,
+                        India, the ashram is a sanctuary for seekers on a quest for higher consciousness. Founded by Sri
+                        Aurobindo and The Mother, our ashram is not just a place; it's a spiritual journey that
+                        transcends the ordinary. Here, the pursuit of self-realization is at the core of our existence,
+                        and every day is a step toward a more conscious and harmonious life. </p>
+                    <div class="col-md-12">
+                        <a class="btn btn-primary btn-sm mt-2 mb-3" href="https://www.sriaurobindoashram.org/">
+                            Visit </a>
+                    </div>
+                </div>
+
+                <div class="col-md-5 order-md-1">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        src="images/saa-placeholder.jpg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" />
+                    </img>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2009-2011</h4>
+                            <h4 class="subheading">Our Humble Beginnings</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
+                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>March 2011</h4>
+                            <h4 class="subheading">An Agency is Born</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
+                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>December 2015</h4>
+                            <h4 class="subheading">Transition to Full Service</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
+                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>July 2020</h4>
+                            <h4 class="subheading">Phase Two Expansion</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
+                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image">
+                        <h4>
+                            Be Part
+                            <br />
+                            Of Our
+                            <br />
+                            Story!
+                        </h4>
+                    </div>
+                </li>
+            </ul> -->
+        </div>
+    </section>
+    <!-- Gallery-->
+    <section class="page-section bg-light" id="gallery">
+        <div class="container">
+            <div class="intro">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Gallery</h2>
+                    <h3 class="section-subheading text-muted">-----------</h3>
+                </div>
+            </div>
+            <!-- Row 1 -->
+            <div class="row">
+                <!-- Gallery Item 1 -->
+                <div class="col-md-8">
+                    <div class="gallery-item">
+                        <a class="gallery-link" data-bs-toggle="modal" href="#galleryModal1">
+                            <div class="gallery-hover">
+                                <div class="gallery-hover-content">
+                                    <i class="fas fa-plus fa-2x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="https://chaitanvachan.files.wordpress.com/2021/06/00000149.jpg"
+                                alt="Gallery Item 1" />
+                        </a>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <a class="gallery-link" data-bs-toggle="modal" href="#galleryModal1">
+                            <div class="gallery-hover">
+                                <div class="gallery-hover-content">
+                                    <i class="fas fa-plus fa-2x"></i>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="img-fluid" src="images/articles-master.jpg" alt="Gallery Item 1" />
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- Gallery Item 3  -->
+                    <div class="gallery-item">
+                        <a class="gallery-link" data-bs-toggle="modal" href="#galleryModal1">
+                            <div class="gallery-hover">
+                                <div class="gallery-hover-content">
+                                    <i class="fas fa-plus fa-2x"></i>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="img-fluid" src="images/artwork-master.jpg" alt="Gallery Item 1" />
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="row">
+                <!-- Gallery Item 4  -->
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <a class="gallery-link" data-bs-toggle="modal" href="#galleryModal1">
+                            <div class="gallery-hover">
+                                <div class="gallery-hover-content">
+                                    <i class="fas fa-plus fa-2x"></i>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="img-fluid" src="images/gallery-camera.jpg" alt="Gallery Item 1" />
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <!-- Gallery Item 5  -->
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <a class="gallery-link" data-bs-toggle="modal" href="#galleryModal1">
+                            <div class="gallery-hover">
+                                <div class="gallery-hover-content">
+                                    <i class="fas fa-plus fa-2x"></i>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="img-fluid" src="images/photo-essay-master.jpg" alt="Gallery Item 1" />
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <!-- Gallery Item 6  -->
+                <div class="col-md-4">
+                    <div class="gallery-item">
+                        <a class="gallery-link" data-bs-toggle="modal" href="#galleryModal1">
+                            <div class="gallery-hover">
+                                <div class="gallery-hover-content">
+                                    <i class="fas fa-plus fa-2x"></i>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="img-fluid" src="images/poems-master.jpg" alt="Gallery Item 1" />
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 3 -->
+            <div class="row">
+                <!-- Gallery Item 7  -->
+                <div class="col-md-6">
+                    <div class="gallery-item">
+                        <a class="gallery-link" data-bs-toggle="modal" href="#galleryModal1">
+                            <div class="gallery-hover">
+                                <div class="gallery-hover-content">
+                                    <i class="fas fa-plus fa-2x"></i>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="img-fluid" src="images/interviews-master.jpg" alt="Gallery Item 1" />
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <!-- Gallery Item 8  -->
+                <div class="col-md-6">
+                    <div class="gallery-item">
+                        <a class="gallery-link" data-bs-toggle="modal" href="#galleryModal1">
+                            <div class="gallery-hover">
+                                <div class="gallery-hover-content">
+                                    <i class="fas fa-plus fa-2x"></i>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="img-fluid" src="images/gallery-hole.jpg" alt="Gallery Item 1" />
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 4 -->
+            <div class="row">
+                <!-- Gallery Item 9  -->
+                <div class="col-md-6">
+                    <div class="gallery-item">
+                        <a class="gallery-link" data-bs-toggle="modal" href="#galleryModal1">
+                            <div class="gallery-hover">
+                                <div class="gallery-hover-content">
+                                    <i class="fas fa-plus fa-2x"></i>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="img-fluid" src="images/gallery-waterfall-md.jpg" alt="Gallery Item 1" />
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <!-- Gallery Item 10  -->
+                    <div class="gallery-item">
+                        <a class="gallery-link" data-bs-toggle="modal" href="#galleryModal1">
+                            <div class="gallery-hover">
+                                <div class="gallery-hover-content">
+                                    <i class="fas fa-plus fa-2x"></i>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="img-fluid" src="images/gallery-dolphine.jpg" alt="Gallery Item 1" />
+                            </figure>
+                        </a>
+                    </div>
+                    <!-- Gallery Item 11  -->
+                    <div class="gallery-item">
+                        <a class="gallery-link" data-bs-toggle="modal" href="#galleryModal1">
+                            <div class="gallery-hover">
+                                <div class="gallery-hover-content">
+                                    <i class="fas fa-plus fa-2x"></i>
+                                </div>
+                            </div>
+                            <figure>
+                                <img class="img-fluid" src="images/gallery-mountains-and-birds5x4.jpg"
+                                    alt="Gallery Item 1" />
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <a class="btn btn-primary btn-md mt-5 mb-0" href="#gallery">
+                    View More</a>
+            </div>
+        </div>
+
+        <!-- Optional: Add modals for each gallery item -->
+        <!-- Example Modal -->
+        <div class="modal fade" id="galleryModal1" tabindex="-1" role="dialog" aria-labelledby="galleryModal1Label"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="galleryModal1Label">Gallery Item 1</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Modal content for Gallery Item 1 -->
+                        <p>Additional details or content for Gallery Item 1.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                                <h4>Parveen Anand</h4>
+                                <p class="text-muted">Lead Designer</p>
+                                <a class="btn btn-dark btn-social mx-2" href="#!"
+                                    aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-dark btn-social mx-2" href="#!"
+                                    aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-dark btn-social mx-2" href="#!"
+                                    aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                                <h4>Diana Petersen</h4>
+                                <p class="text-muted">Lead Marketer</p>
+                                <a class="btn btn-dark btn-social mx-2" href="#!"
+                                    aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-dark btn-social mx-2" href="#!"
+                                    aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-dark btn-social mx-2" href="#!"
+                                    aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="team-member">
+                                <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                                <h4>Larry Parker</h4>
+                                <p class="text-muted">Lead Developer</p>
+                                <a class="btn btn-dark btn-social mx-2" href="#!"
+                                    aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-dark btn-social mx-2" href="#!"
+                                    aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-dark btn-social mx-2" href="#!"
+                                    aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Aut
+                                eaque,
+                                laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut
+                                unde.
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+    </section>
+    <!-- Clients
+    <div class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg"
+                            alt="..." aria-label="Microsoft Logo" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg"
+                            alt="..." aria-label="Google Logo" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg"
+                            alt="..." aria-label="Facebook Logo" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg"
+                            alt="..." aria-label="IBM Logo" /></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Contact Us</h2>
+                <h3 class="section-subheading text-white">We are listning...</h3>
+            </div>
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Your Name *"
+                                data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Your Email *"
+                                data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
+                                data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Your Message *"
+                                data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center text-white mb-3">
+                        <div class="fw-bolder">Form submission successful!</div>
+                        To activate this form, sign up at
+                        <br />
+                        <a
+                            href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    </div>
+                </div>
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+                <!-- Submit Button-->
+                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled"
+                        id="submitButton" type="submit">Send Message</button></div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; SLAICE 2023</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h3 class="text-uppercase">Sneak Peek</h3>
+                                <img class="img-fluid d-block mx-auto" src="images/alter-self.jpg" alt="..." />
+                                <h5 class="text-muted">Alter Self</h5>
+
+                                <p>If I were to be <br>
+                                    In an alternative reality, <br>
+                                    Assuming I'm the only one alive, <br>
+                                    I'd walk through the empty roads <br>
+                                    And then I'd feel a strong heartbeat, <br>
+                                    And follow that sound with my tiny bare feet. <br>
+                                    ...
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Author:</strong>
+                                        Rayih
+                                    </li>
+                                    <li>
+                                        <strong>Section:</strong>
+                                        K2
+                                    </li>
+                                </ul>
+                                <a class="btn btn-primary btn-xl text-uppercase" href="">
+                                    <!-- <i class="fas fa-xmark me-1"></i> -->
+                                    Read Now
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 2 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h3 class="text-uppercase">Sneak Peek</h3>
+                                <img class="img-fluid d-block mx-auto" src="images/beach-at-night.jpg" alt="..." />
+                                <h5 class="text-muted">The Beach At Night</h5>
+
+                                <p>The dense sky above stole the silver light of the hour. The little stars dotted the
+                                    gaps between the clouds. The dimly lit moon shone on the rough sea beneath, glazing
+                                    it with a serene silver. The stormy sea waves crashed on the sandy shore in rhythm,
+                                    putting out an orchestra for my emotions to dance on. I walked on the sand with my
+                                    bare feet while the entire city slept and a trail of thoughts started whirling in my
+                                    head. The tall waves violently crashing on the shore and silently pulling back
+                                    looked like the visuals of the thoughts caged in my mind...
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Author:</strong>
+                                        Chaitanya
+                                    </li>
+                                    <li>
+                                        <strong>Section:</strong>
+                                        K2
+                                    </li>
+                                </ul>
+                                <a class="btn btn-primary btn-xl text-uppercase" href="">
+                                    <!-- <i class="fas fa-xmark me-1"></i> -->
+                                    Read Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h3 class="text-uppercase">Sneak Peek</h3>
+                                <img class="img-fluid d-block mx-auto" src="images/the-tenent.jpg" alt="..." />
+                                <h5 class="text-muted">The Tenant</h5>
+                                <p>The air freshener was the last piece to get on the wall. It replaced the dusty smell
+                                    and made him feel at home. He picked up a glass of juice from the refrigerator and
+                                    dropped down on the recliner, satisfied. While moving in, he had also managed to
+                                    pick up the cat and release it in the car parking, so his mental checklist had only
+                                    ticks now. A yawn knocked at the roof of his mouth, and he released it, closing his
+                                    eyes...
+
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Author:</strong>
+                                        Chaitanya
+                                    </li>
+                                    <li>
+                                        <strong>Section:</strong>
+                                        K2
+                                    </li>
+                                </ul>
+                                <a class="btn btn-primary btn-xl text-uppercase" href="">
+                                    <!-- <i class="fas fa-xmark me-1"></i> -->
+                                    Read Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 4 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                    nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Lines
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Branding
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 5 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                    nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Southwest
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Website Design
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 6 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                    nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Window
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Photography
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
 </html>

@@ -13387,3 +13387,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   background-color: rgb(228, 228,228)!important;
 }
 
+.download-button {
+  color: #fff;
+  border-color: #fff;
+}

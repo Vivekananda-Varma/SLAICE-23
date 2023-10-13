@@ -13435,7 +13435,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 @media (min-width: 768px) {
   .carousel-item {
       margin-right: 0;
-      flex: 0 0 25%;
+      flex: 0 0 20%;
       display: block;
   }
 
@@ -13453,6 +13453,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .card img {
   max-width: 100%;
+  
 }
 
 @media (max-width: 767px) {

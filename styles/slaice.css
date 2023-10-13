@@ -13451,11 +13451,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   align-items: center;
 }
 
-.card img {
-  max-width: 100%;
-  
-}
-
 @media (max-width: 767px) {
   .card .img-wrapper {
       height: 17em;

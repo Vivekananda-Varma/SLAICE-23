@@ -26,6 +26,7 @@ main {
     margin-bottom: 1%;   
 }
 
+
 .carousel-slider {
     margin: 0 5%;
 }
@@ -72,6 +73,15 @@ main {
 
 .card img {
     max-height: 100%;
+}
+
+.card-body {
+    display: flex !important;
+    flex-direction: column !important;
+}
+    
+.card .btn {
+    margin-top: auto !important;
 }
 
 @media (max-width: 767px) {

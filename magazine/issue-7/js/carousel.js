@@ -1,38 +1,92 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let multipleCardCarousel = document.querySelector("#carouselExampleControls");
+/* 1 carousel */
+$('#carousel-1').carousel({
+    interval: 4000,
+    wrap: true,
+    keyboard: true
+});
 
-    if (window.matchMedia("(min-width: 768px)").matches) {
-        let carousel = new bootstrap.Carousel(multipleCardCarousel, {
-            interval: false, // Disable automatic sliding
-            wrap: false, // Prevent wrapping at the end
-        });
 
-        let carouselWidth = document.querySelector(".carousel-inner").scrollWidth;
-        let cardWidth = document.querySelector(".carousel-item").offsetWidth;
-        let scrollPosition = 0;
+/* 2 carousel */
+$('#carousel-2').carousel({
+    interval: 6000,
+    wrap: true,
+    keyboard: true
+});
 
-        document
-            .querySelector("#carouselExampleControls .carousel-control-next")
-            .addEventListener("click", function () {
-                if (scrollPosition < carouselWidth - cardWidth * 4) {
-                    scrollPosition += cardWidth;
-                    document
-                        .querySelector("#carouselExampleControls .carousel-inner")
-                        .scroll({ left: scrollPosition, behavior: "smooth" });
-                }
-            });
 
-        document
-            .querySelector("#carouselExampleControls .carousel-control-prev")
-            .addEventListener("click", function () {
-                if (scrollPosition > 0) {
-                    scrollPosition -= cardWidth;
-                    document
-                        .querySelector("#carouselExampleControls .carousel-inner")
-                        .scroll({ left: scrollPosition, behavior: "smooth" });
-                }
-            });
-    } else {
-        multipleCardCarousel.classList.add("slide");
-    }
+/* 3 carousel */
+$('#carousel-3').carousel({
+    interval: 8000,
+    wrap: true,
+    keyboard: true
+});
+
+/* 4 carousel example with jumbotron */
+$('#carousel-4').carousel({
+    interval: 10000,
+    wrap: true,
+    keyboard: true
+});
+
+/* 5 carousel example */
+$('#carousel-5').carousel({
+    interval: 6000,
+    wrap: true,
+    keyboard: true
+});
+
+/* 6 carousel example */
+$('#carousel-6').carousel({
+    interval: 8000,
+    wrap: true,
+    keyboard: true
+});
+
+/* 7 carousel example */
+$('#carousel-7').carousel({
+    interval: 4000,
+    wrap: true,
+    keyboard: true
+});
+
+/* 8 carousel example */
+$('#carousel-8').carousel({
+    interval: 6000,
+    wrap: true,
+    keyboard: true
+});
+
+/* 9 carousel example */
+$('#carousel-9').carousel({
+    interval: 8000,
+    wrap: true,
+    keyboard: true
+});
+
+/* 10 carousel example */
+$('#carousel-10').carousel({
+    interval: 2000,
+    wrap: true,
+    keyboard: true
+});
+
+/* 11 carousel example */
+$('#carousel-11').carousel({
+    interval: 4000,
+    wrap: true,
+    keyboard: true
+});
+
+/* 12 carousel example */
+$('#carousel-12').carousel({
+    interval: 6000,
+    wrap: true,
+    keyboard: true
+});
+
+/* 13 carousel example */
+$('#carousel-13').carousel({
+    interval: 8000,
+    wrap: true,
+    keyboard: true
 });

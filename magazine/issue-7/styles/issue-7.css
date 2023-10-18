@@ -2,6 +2,13 @@ main {
     margin: 0 10% !important;
 }
 
+#editors-note {
+    margin-top: 100px;
+    padding: 5vh 25vh;
+    background-color: #e1e1e1;
+    border-radius: 5px;
+}
+
 .card-wrapper {
     display: flex;
 }

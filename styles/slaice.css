@@ -221,6 +221,7 @@
 }
 
 body {
+  position: absolute;
   margin: 0;
   font-family: "avenir-next-regular";
   font-size: var(--bs-body-font-size);
@@ -4266,6 +4267,7 @@ fieldset:disabled .btn {
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
   flex-wrap: wrap;
+  position: fixed;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -13456,4 +13458,3 @@ section#contact form#contactForm :-ms-input-placeholder {
       height: 17em;
   }
 }
-

@@ -2,7 +2,12 @@ main {
     margin: 0 10% !important;
 }
 
-#editors-note {
+#editorial-heading {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#editorial-container {
     margin-top: 100px;
     padding: 5vh 25vh;
     background-color: #e1e1e1;

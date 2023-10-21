@@ -47,26 +47,29 @@
         </ol>
     </nav>
 
-    <main>
-        <H2>An Unconventional Estimation</H2>
-        <p>- Aurokrishna</p>
-        <p>The most intriguing and inviting problems in maths or related domains are often those which are simple to understand but appear nearly impossible to solve, and yet possess a straightforward, elegant solution. Such problems tend to surprise their readers at first, giving them the false impression that they surely lack the key ingredients required to solve the problem. Attempting to solve such problems may appear akin to trying to pull a rabbit out of the hat, whereas in reality, all that’s needed is one creative insight. Such is the nature of the following problem.</p>
-        <p>Given a function which outputs a random number between 0 and 1, describe a method to estimate pi.</p>
-        <h4>SOLUTION</h4>
-        <p>First, note that the random function can be called twice to get a random point (x,y), which belongs to the 1x1 square as shown below:</p>
-        <p>Follow this procedure to get a large number of random points:</p>
-        <p>The key insight into the problem lies in the following figure. </p>
-        <p>We can now work with the following approximation:</p>
-        <p># points in the quarter-circle# total points area of the quarter-circlearea of the square=(1)2412=4</p>
-        <p>Thus:</p>
-        <p>4# points in the quarter-circle# total points  (1)</p>
-        <p>The remaining task is to determine whether a generated point lies inside the quarter-circle. Since the quarter-circle’s radius is 1, the generated point will belong to it if the distance between the point and the origin is less than 1. In other words, a generated point (x,y) must satisfy the following condition to belong to the quarter-circle:</p>
-        <p>x2+y2<1</p>
-        <p>In summary, the method for approximating the value of pi given a function which outputs a random number between 0 and 1 is:</p>
-        <p>Generate a large number of random points (x,y) while keeping track of the number of points which fall inside the quarter-circle. </p>
-        <p>Use equation (1).</p>
-        <p>Note of course that the larger the quantity of the generated points, the better the approximation of pi. </p>
-    </main>
+    <article>
+        <H2 class="article-heading">An Unconventional Estimation</H2>
+        <p class="article-author">Vibhu Dalal | K3</p>
+        <p class="article-body-text">The most intriguing and inviting problems in maths or related domains are often those which are simple to understand but appear nearly impossible to solve, and yet possess a straightforward, elegant solution. Such problems tend to surprise their readers at first, giving them the false impression that they surely lack the key ingredients required to solve the problem. Attempting to solve such problems may appear akin to trying to pull a rabbit out of the hat, whereas in reality, all that’s needed is one creative insight. Such is the nature of the following problem.</p>
+        <p class="article-body-text">Given a function which outputs a random number between 0 and 1, describe a method to estimate pi.</p>
+        <h4  class="article-sub-heading">SOLUTION</h4>
+        <p class="article-body-text">First, note that the random function can be called twice to get a random point (x,y), which belongs to the 1x1 square as shown below:</p>
+        <p class="article-body-text">Follow this procedure to get a large number of random points:</p>
+        <p class="article-body-text">The key insight into the problem lies in the following figure. </p>
+        <p class="article-body-text">We can now work with the following approximation:</p>
+        <p class="article-body-text"># points in the quarter-circle# total points area of the quarter-circlearea of the square=(1)2412=4</p>
+        <p class="article-body-text">Thus:</p>
+        <p class="article-body-text">4# points in the quarter-circle# total points  (1)</p>
+        <p class="article-body-text">The remaining task is to determine whether a generated point lies inside the quarter-circle. Since the quarter-circle’s radius is 1, the generated point will belong to it if the distance between the point and the origin is less than 1. In other words, a generated point (x,y) must satisfy the following condition to belong to the quarter-circle:</p>
+        <p class="article-body-text">x2+y2<1</p>
+        <p class="article-body-text">In summary, the method for approximating the value of pi given a function which outputs a random number between 0 and 1 is:</p>
+        <p class="article-body-text">Generate a large number of random points (x,y) while keeping track of the number of points which fall inside the quarter-circle. </p>
+        <p class="article-body-text">Use equation (1).</p>
+        <p class="article-body-text">Note of course that the larger the quantity of the generated points, the better the approximation of pi. </p>
+        <div class="article-img-container">
+            <img id="an-unconventional-estimation-img" src="photos-and-illustrations" alt="">
+        </div>
+    </article>
     
 
     <!-- Footer-->

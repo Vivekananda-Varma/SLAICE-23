@@ -1,114 +1,219 @@
-<!doctype html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Magazine</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/magazine.css">
-    <script src="issue-7/js/carousel.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="Codeply">
+	<title>Codeply simple HTML/CSS/JS preview</title>
+	<base target="_self">
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="../styles/slaice.css" />
+	<style>
+		@media (max-width: 767px) {
+			.carousel-inner .carousel-item>div {
+				display: none;
+			}
+
+			.carousel-inner .carousel-item>div:first-child {
+				display: block;
+			}
+		}
+
+		.carousel-inner .carousel-item.active,
+		.carousel-inner .carousel-item-next,
+		.carousel-inner .carousel-item-prev {
+			display: flex;
+		}
+		
+		.carousel-control-prev,
+		.carousel-control-next {
+			background-color: #e1e1e1;
+			width: 5vh;
+			height: 5vh;
+			border-radius: 50%;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		/* medium and up screens */
+		@media (min-width: 768px) {
+
+			.carousel-inner .carousel-item-end.active,
+			.carousel-inner .carousel-item-next {
+				transform: translateX(25%);
+			}
+
+			.carousel-inner .carousel-item-start.active,
+			.carousel-inner .carousel-item-prev {
+				transform: translateX(-25%);
+			}
+		}
+
+		.carousel-inner .carousel-item-end,
+		.carousel-inner .carousel-item-start {
+			transform: translateX(0);
+		}
+	</style>
 </head>
 
 <body>
-    <main>
-        <h2 id="section-headings">Past Issues</h2>
-        <div id="carouselExample" class="carousel carousel-dark slide" data-ride="carousel">
-            <div class=" carousel-inner">
-                <div class="carousel-item active">
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="magazine-cover-pages/SLAICE Issue 06 2022 cropped.png">
-                            <div class="card-body">
-                                <h5 class="card-title">Issue 6 | 2022</h5>
-                                <a href="blender-the-bridge-between-fantasy-and-reality.html" class="btn btn-primary" id="read-btn">Read</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="magazine-cover-pages/SLAICE Issue 05 2019 cropped.jpg">
-                            <div class="card-body">
-                                <h5 class="card-title">Issue 5 | 2019</h5>
-                                <a href="comic-blue-soda" class="btn btn-primary" id="read-btn"">Read</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="magazine-cover-pages/SLAICE Issue 04 2017 cropped.jpg">
-                            <div class="card-body">
-                                <h5 class="card-title">Issue 4 | 2017</h5>
-                                <a href="digital-art.html" class="btn btn-primary" id="read-btn">Read</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="magazine-cover-pages/SLAICE Issue 03 2016 cropped.jpg">
-                            <div class="card-body">
-                                <h5 class="card-title">Issue 3 | 2016</h5>
-                                <a href="my-journey-with-origami.html" class="btn btn-primary" id="read-btn">Read</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img src="magazine-cover-pages/SLAICE Issue 02 2015 cropped.png">
-                            <div class="card-body">
-                                <h5 class="card-title">Issue 2 | 2015</h5>
-                                <a href="quill-and-circles.html" class="btn btn-primary" id="read-btn">Read</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="magazine-cover-pages/SLAICE Issue 01 2014 cropped.png">
-                            <div class="card-body">
-                                <h5 class="card-title">Issue 1 | 2014</h5>
-                                <a href="starry-night.html" class="btn btn-primary" id="read-btn">Read</a>
-                            </div>
-                        </div>
-                        <div class="card opacity-0">
-                            <img src="magazine-cover-pages">
-                            <div class="card-body">
-                                <h5 class="card-title">Title</h5>
-                                <a href="" class="btn btn-primary" id="read-btn">Read</a>
-                            </div>
-                        </div>
-                        <div class="card opacity-0">
-                            <img src="magazine-cover-pages">
-                            <div class="card-body">
-                                <h5 class="card-title">Title</h5>
-                                <a href="" class="btn btn-primary" id="read-btn">Read</a>
-                            </div>
-                        </div>
-                        <div class="card opacity-0">
-                            <img src="magazine-cover-pages">
-                            <div class="card-body">
-                                <h5 class="card-title">Title</h5>
-                                <a href="" class="btn btn-primary" id="read-btn">Read</a>
-                            </div>
-                        </div>
-                        <div class="card opacity-0">
-                            <img src="magazine-cover-pages">
-                            <div class="card-body">
-                                <h5 class="card-title">Title</h5>
-                                <a href="" class="btn btn-primary" id="read-btn">Read</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </main>
+	<!-- Navigation-->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand" href="../index.html"><img src="../images/logos/slaice-logo-white.png" alt="..." /></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				Menu
+				<i class="fas fa-bars ms-1"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+					<li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="index.html">Magazine</a></li>
+					<li class="nav-item"><a class="nav-link" href="../gallery.html">Gallery</a></li>
+					<li class="nav-item"><a class="nav-link" href="../about.html">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="../contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section>
+		<div class="container text-center my-3">
+		<h2 class="font-weight-light">Past Issues</h2>
+		<div class="row mx-auto my-auto justify-content-center">
+			<div id="magazine-carousel" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+						<div class="col-md-3">
+							<div class="card">
+								<img src="cover-pages/SLAICE Issue 06 2022 cropped.png" class="img-fluid">
+								<div class="card-body">
+									<h5 class="card-title">Issue 6 | 2022</h5>
+									<a href="blender-the-bridge-between-fantasy-and-reality.html" class="btn btn-primary" id="read-btn">Read</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="col-md-3">
+							<div class="card">
+								<img src="cover-pages/SLAICE Issue 05 2019 cropped.jpg" class="img-fluid">
+								<div class="card-body">
+									<h5 class="card-title">Issue 5 | 2019</h5>
+									<a href="comic-blue-soda" class="btn btn-primary" id="read-btn"">Read</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="col-md-3">
+							<div class="card">
+								<img src="cover-pages/SLAICE Issue 04 2017 cropped.jpg" class="img-fluid">
+								<div class="card-body">
+									<h5 class="card-title">Issue 4 | 2017</h5>
+									<a href="digital-art.html" class="btn btn-primary" id="read-btn">Read</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="col-md-3">
+							<div class="card">
+								<img src="cover-pages/SLAICE Issue 03 2016 cropped.jpg" class="img-fluid">
+								<div class="card-body">
+									<h5 class="card-title">Issue 3 | 2016</h5>
+									<a href="my-journey-with-origami.html" class="btn btn-primary" id="read-btn">Read</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="card">
+							<img src="cover-pages/SLAICE Issue 02 2015 cropped.png" class="img-fluid">
+							<div class="card-body">
+								<h5 class="card-title">Issue 2 | 2015</h5>
+								<a href="quill-and-circles.html" class="btn btn-primary" id="read-btn">Read</a>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="col-md-3">
+							<div class="card">
+								<img src="cover-pages/SLAICE Issue 01 2014 cropped.png" class="img-fluid">
+								<div class="card-body">
+									<h5 class="card-title">Issue 1 | 2014</h5>
+									<a href="starry-night.html" class="btn btn-primary" id="read-btn">Read</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				</a>
+				<a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</a> -->
+				
+				<button class="carousel-control-prev" type="button" data-bs-target="#magazine-carousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#magazine-carousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+	<!-- Footer-->
+	<footer class="footer py-4">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-4 text-lg-start">Copyright &copy; SLAICE 2023</div>
+				<div class="col-lg-8 text-lg-end">
+					<a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+					<a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Bootstrap core JS-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Core theme JS-->
+	<script src="../js/fixed-navbar.js"></script>
+	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+	<!-- * *                               SB Forms JS                               * *-->
+	<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+	<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<script>
+		let items = document.querySelectorAll('.carousel .carousel-item')
+
+		items.forEach((el) => {
+			const minPerSlide = 4
+			let next = el.nextElementSibling
+			for (var i = 1; i < minPerSlide; i++) {
+				if (!next) {
+					// wrap carousel by using first child
+					next = items[0]
+				}
+				let cloneChild = next.cloneNode(true)
+				el.appendChild(cloneChild.children[0])
+				next = next.nextElementSibling
+			}
+		})
+	</script>
+
+
 </body>
 
 </html>

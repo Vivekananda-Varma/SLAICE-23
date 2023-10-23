@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -18,12 +19,29 @@
     <link rel="stylesheet" href="styles/fonts.css">
 
     <style>
-        
-    #designers-group-pic {
-    width: 100%;
-    }
+        #contact-form-heading{
+            margin-bottom: 35px;
+        }
+
+        #designers-group-img {
+            max-width: 100%;
+        }
+
+        #contact-form-container {
+            height: 100%;
+            padding: 20px;
+            background-color: #eaeaea;
+            border-radius: 7px;
+        }
+
+        #first-name, #second-name, #email-address, #message {
+            font-size: 0.9rem;
+            border: none;
+        }
+
     </style>
 </head>
+
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -46,15 +64,52 @@
         </div>
     </nav>
 
-
-    <!-- About-->
-    <section class="page-section" id="about">
+    <section>
+        <hr class="featurette-divider">
         <div class="container">
-            <img id="designers-group-pic" src="magazine/issue-7/photos-and-illustrations/designers-photo/Designers_group_pic_2023.png" alt="">
-            <hr class="featurette-divider">
-        </div>
+            <div class="row">
+                <div class="col-3">
+                    <!-- Wrapper container -->
+                    <div id="contact-form-container">
+                        <form id="contactForm">
+                            <h2 id="contact-form-heading">Contact Us</h2>
+                            <div class="mb-3">
+                                <label class="form-label" for="first-name">First Name</label>
+                                <input class="form-control" id="first-name" type="text" placeholder="First Name" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="second-name">Second Name</label>
+                                <input class="form-control" id="second-name" type="text" placeholder="Second Name" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="emailAddress">Email Address</label>
+                                <input class="form-control" id="email-address" type="email"
+                                    placeholder="Email Address" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea class="form-control" id="message" type="text" placeholder="What are your thoughts?"
+                                    style="height: 10rem;"></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-lg" id="contact-form-submit-btn" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div>
+                        <img id="designers-group-img"
+                            src="magazine/issue-7/photos-and-illustrations/designers-photo/Designers_group_pic_2023.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+
     </section>
-    
+
+    <hr class="featurette-divider">
+
     <!-- Footer-->
     <footer class="footer py-4">
         <div class="container">

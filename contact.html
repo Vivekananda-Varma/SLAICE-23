@@ -28,13 +28,12 @@
         }
 
         #contact-form-container {
-            height: 100%;
             padding: 20px;
             background-color: #eaeaea;
             border-radius: 7px;
         }
 
-        #first-name, #second-name, #email-address, #message {
+        #first-name, #last-name, #email-address, #message {
             font-size: 0.9rem;
             border: none;
         }
@@ -65,43 +64,35 @@
     </nav>
 
     <section>
-        <hr class="featurette-divider">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-lg-3 mb-5">
+                <div class="col-sm-12 col-lg-3 m-auto">
                     <!-- Wrapper container -->
                     <div id="contact-form-container">
-                        <form id="contactForm">
+                        <form id="contactForm" action="https://formspree.io/f/mpzgbpvo" method="POST">
                             <h2 id="contact-form-heading">Contact Us</h2>
                             <div class="mb-3">
                                 <label class="form-label" for="first-name">First Name</label>
-                                <input class="form-control" id="first-name" type="text" placeholder="First Name" />
+                                <input class="form-control" id="first-name" name="First Name" type="text" placeholder="First Name" />
                             </div>
                             <div class="mb-3">
-                                <label class="form-label" for="second-name">Second Name</label>
-                                <input class="form-control" id="second-name" type="text" placeholder="Second Name" />
+                                <label class="form-label" for="last-name">Last Name</label>
+                                <input class="form-control" id="last-name" name="Last Name" type="text" placeholder="Last Name" />
                             </div>
                             <div class="mb-3">
                                 <label class="form-label" for="emailAddress">Email Address</label>
-                                <input class="form-control" id="email-address" type="email"
+                                <input class="form-control" id="email-address" name="Email" type="email"
                                     placeholder="Email Address" />
                             </div>
                             <div class="mb-3">
                                 <label class="form-label" for="message">Message</label>
-                                <textarea class="form-control" id="message" type="text" placeholder="What are your thoughts?"
+                                <textarea class="form-control" id="message" name="Message" type="text" placeholder="What are your thoughts?"
                                     style="height: 10rem;"></textarea>
                             </div>
                             <div class="d-grid">
                                 <button class="btn btn-primary btn-lg" id="contact-form-submit-btn" type="submit">Submit</button>
                             </div>
                         </form>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg-9 mt-5">
-                    <div>
-                        <img id="designers-group-img"
-                            src="magazine/issue-7/photos-and-illustrations/designers-photo/Designers_group_pic_2023.png"
-                            alt="">
                     </div>
                 </div>
             </div>

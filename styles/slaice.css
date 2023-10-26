@@ -11,9 +11,6 @@
   border-color: #fff;
 }
 
-#magazine-cover-img {
-  height: 400px;
-}
 
 .section-heading {
   margin-top: 3%;
@@ -25,62 +22,24 @@
   margin: 0 10% !important;
 }
 
-#editorial-heading {
-  margin-bottom: 30px;
-  text-align: center;
-}
+@media screen and (min-width: 768px) {
+  #editorial-heading {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  #editorial-container {
+    margin-top: 100px;
+    padding: 5vh 25vh;
+    background-color: #e1e1e1;
+    border-radius: 5px;
+  }
 
-#editorial-container {
-  margin-top: 100px;
-  padding: 5vh 25vh;
-  background-color: #e1e1e1;
-  border-radius: 5px;
 }
 
 #section-headings {
   margin-top: 5%;
   margin-left: 12%;
-}
-
-.card-wrapper {
-  display: flex;
-}
-
-
-.card {
-  margin: 0 0.5em;
-  width: 25%;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-  border-radius: 5px !important;
-  border: none;
-}
-
-.card-body { 
-  display: flex;
-  flex-direction: column;
-}
-
-.carousel-inner {
-  padding: 1em;
-}
-
-/* .carousel-item {
-  background-color: rgb(204, 204, 204);
-  border-radius: 5px;
-} */
-
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: #e1e1e1;
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#read-btn {
-  margin-top: auto !important;
 }
 
 .article-author {
@@ -119,4 +78,55 @@ article {
   article {
       padding: 0 5%;
   }
+}
+
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item>div {
+    display: none;
+  }
+
+  .carousel-inner .carousel-item>div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+.card {
+  margin: 0 0.5em;
+  text-align: left;
 }

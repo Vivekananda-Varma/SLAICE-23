@@ -17,6 +17,9 @@
     <link href="../../../styles/template.css" rel="stylesheet">
     <link href="../../../styles/fonts.css" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles/slaice.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body id="page-top">
     <!-- Navigation-->
@@ -55,11 +58,42 @@
         <H2 class="article-heading">An Unconventional Estimation</H2>
         <p class="article-author">Vibhu Dalal | K3</p>
         <p class="article-body-text">The most intriguing and inviting problems in maths or related domains are often those which are simple to understand but appear nearly impossible to solve, and yet possess a straightforward, elegant solution. Such problems tend to surprise their readers at first, giving them the false impression that they surely lack the key ingredients required to solve the problem. Attempting to solve such problems may appear akin to trying to pull a rabbit out of the hat, whereas in reality, all that’s needed is one creative insight. Such is the nature of the following problem.</p>
-        <p class="article-body-text">My gaze fell upon a French building. A tightly knit bougainvillaea crept down its tall walls. The creeper was in full bloom and the flower bunches had a tint of magenta and were vivid and bold. Suddenly it occurred to me that the significance given to this flower by The Mother is Protection, and the message it was giving out was true to its name; strong and protecting the building from dangers. </p>
+        <h4 class="article-sub-heading">Problem</h4>
+        <p class="article-body-text"><b>Given a function which outputs a random number between 0 and 1, describe a method to estimate pi.</b></p>
+        <h4 class="article-sub-heading">Solution</h4>
+        <p class="article-body-text">First, note that the random function can be called twice to get a random point (x,y), which belongs to the 1x1 square as shown below:</p>
         <div class="article-img-container">
-            <img id="quill-and-circles-img" src="../photos-and-illustrations/roads-of-pondicherry/Roads_of_pondicherry_02.jpg" alt="">
-            <!-- <p class="img-caption">Photo by Boddu Kiran Aditya</p> -->
+            <img id="an-unconventional-estimation-img-01" src="../photos-and-illustrations/an-unconventional-estimation/An_unconventional_estimation_01.png" alt="">
         </div>
+        <p class="article-body-text">Follow this procedure to get a large number of random points:</p>
+        <div class="article-img-container">
+            <img id="an-unconventional-estimation-img-02" src="../photos-and-illustrations/an-unconventional-estimation/An_unconventional_estimation_02.png" alt="">
+        </div>
+        <p class="article-body-text">The key insight into the problem lies in the following figure.</p>
+        <div class="article-img-container">
+            <img id="an-unconventional-estimation-img-03" src="../photos-and-illustrations/an-unconventional-estimation/An_unconventional_estimation_03.png" alt="">
+        </div>
+        <p class="article-body-text">We can now work with the following approximation:</p>
+        <p class="article-body-text">
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>#</mi><mo>&#xa0;</mo><mi>p</mi><mi>o</mi><mi>i</mi><mi>n</mi><mi>t</mi><mi>s</mi><mo>&#xa0;</mo><mi>i</mi><mi>n</mi><mo>&#xa0;</mo><mi>t</mi><mi>h</mi><mi>e</mi><mo>&#xa0;</mo><mi>q</mi><mi>u</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>e</mi><mi>r</mi><mo>-</mo><mi>c</mi><mi>i</mi><mi>r</mi><mi>c</mi><mi>l</mi><mi>e</mi></mrow><mrow><mi>#</mi><mo>&#xa0;</mo><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mo>&#xa0;</mo><mi>p</mi><mi>o</mi><mi>i</mi><mi>n</mi><mi>t</mi><mi>s</mi></mrow></mfrac><mo>&#x2248;</mo><mfrac><mrow><mo>&#xa0;</mo><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi><mo>&#xA0;</mo><mi>o</mi><mi>f</mi><mo>&#xA0;</mo><mi>t</mi><mi>h</mi><mi>e</mi><mo>&#xA0;</mo><mi>q</mi><mi>u</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>e</mi><mi>r</mi><mo>-</mo><mi>c</mi><mi>i</mi><mi>r</mi><mi>c</mi><mi>l</mi><mi>e</mi></mrow><mrow><mi>a</mi><mi>r</mi><mi>e</mi><mi>a</mi><mo>&#xA0;</mo><mi>o</mi><mi>f</mi><mo>&#xA0;</mo><mi>t</mi><mi>h</mi><mi>e</mi><mo>&#xA0;</mo><mi>s</mi><mi>q</mi><mi>u</mi><mi>a</mi><mi>r</mi><mi>e</mi></mrow></mfrac><mo>=</mo><mfrac><mfrac><mrow><mi>&#x3c0;</mi><mo>(</mo><mn>1</mn><msup><mo>)</mo><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mrow><msup><mn>1</mn><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mi>&#x3c0;</mi><mn>4</mn></mfrac></math>
+        </p>
+        <p class="article-body-text">Thus:</p>
+        <p class="article-body-text">
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x3c0;</mi><mo>&#x2248;</mo><mn>4</mn><mo>&#xA0;</mo><mo>&#xb7;</mo><mo>&#xA0;</mo><mfrac><mrow><mi>#</mi><mo>&#xA0;</mo><mi>p</mi><mi>o</mi><mi>i</mi><mi>n</mi><mi>t</mi><mi>s</mi><mo>&#xA0;</mo><mi>i</mi><mi>n</mi><mo>&#xA0;</mo><mi>t</mi><mi>h</mi><mi>e</mi><mo>&#xA0;</mo><mi>q</mi><mi>u</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>e</mi><mi>r</mi><mo>-</mo><mi>c</mi><mi>i</mi><mi>r</mi><mi>c</mi><mi>l</mi><mi>e</mi></mrow><mrow><mi>#</mi><mo>&#xA0;</mo><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mo>&#xA0;</mo><mi>p</mi><mi>o</mi><mi>i</mi><mi>n</mi><mi>t</mi><mi>s</mi></mrow></mfrac></math>
+        </p>
+        <p class="article-body-text">The remaining task is to determine whether a generated point lies inside the quarter-circle. Since the quarter-circle’s radius is 1, the generated point will belong to it if the distance between the point and the origin is less than 1. In other words, a generated point (x,y) must satisfy the following condition to belong to the quarter-circle:</p>
+        <p class="article-body-text">
+            <math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></msqrt><mo>&lt;</mo><mo>&#xA0;</mo><mn>1</mn></math>
+        </p>
+        <p class="article-body-text">In summary, the method for approximating the value of pi given a function which outputs a random number between 0 and 1 is:</p>
+        <ol>
+            <li class="article-body-text">Generate a large number of random points (x,y) while keeping track of the number of points which fall inside the quarter-circle.</li>
+            <li class="article-body-text">Use equation (1).</li>
+        </ol>
+        <p class="article-body-text">Note of course that the larger the quantity of the generated points, the better the approximation of pi.</p>
+    
+    
+    
     </article>
     
 

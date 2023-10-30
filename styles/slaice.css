@@ -1,3 +1,8 @@
+@media (min-width: 768px)
+  section {
+   padding: 9rem 0;
+  }
+}
 p {
   font-size: 1rem;
   font-family: "avenir-next-regular";
@@ -21,7 +26,7 @@ h1,h2,h3,h4,h5 {
   border-color: #fff;
 }
 
-.section {
+section {
   padding: 4em 0;
 }
 
@@ -164,6 +169,7 @@ article {
 }
 
 .card {
+<<<<<<< Updated upstream
   margin: 0 0.5em;
 }
 
@@ -179,3 +185,7 @@ article {
     width: 100%;
   }
 }
+=======
+  margin: 0.5em;
+}
+>>>>>>> Stashed changes

@@ -21,6 +21,9 @@ h1,h2,h3,h4,h5 {
   border-color: #fff;
 }
 
+.section {
+  padding: 4em 0;
+}
 
 .section-heading {
   margin-top: 3%;

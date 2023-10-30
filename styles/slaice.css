@@ -1,14 +1,18 @@
-@media (min-width: 768px)
-  section {
-   padding: 9rem 0;
-  }
+@media (min-width: 768px) section {
+  padding: 9rem 0;
 }
+}
+
 p {
   font-size: 1rem;
   font-family: "avenir-next-regular";
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "didot-regular";
 
 }
@@ -18,7 +22,7 @@ h1,h2,h3,h4,h5 {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: rgb(228, 228,228)!important;
+  background-color: rgb(228, 228, 228) !important;
 }
 
 .download-button {
@@ -33,7 +37,7 @@ section {
 .section-heading {
   margin-top: 3%;
   margin-left: 6.5%;
-  margin-bottom: 1%;   
+  margin-bottom: 1%;
 }
 
 .carousel {
@@ -45,7 +49,7 @@ section {
     margin-bottom: 30px;
     text-align: center;
   }
-  
+
   #editorial-container {
     margin-top: 100px;
     padding: 5vh 25vh;
@@ -115,9 +119,12 @@ article {
 
 @media (max-width: 768px) {
   article {
-      padding: 0 5%;
+    padding: 0 5%;
   }
-  #an-unconventional-estimation-img-01, #an-unconventional-estimation-img-02, #an-unconventional-estimation-img-03 {
+
+  #an-unconventional-estimation-img-01,
+  #an-unconventional-estimation-img-02,
+  #an-unconventional-estimation-img-03 {
     width: 100%;
   }
 }
@@ -168,24 +175,25 @@ article {
   transform: translateX(0);
 }
 
-.card {
-<<<<<<< Updated upstream
-  margin: 0 0.5em;
-}
-
-#an-unconventional-estimation-img-01, #an-unconventional-estimation-img-02, #an-unconventional-estimation-img-03 {
+#an-unconventional-estimation-img-01,
+#an-unconventional-estimation-img-02,
+#an-unconventional-estimation-img-03 {
   width: 60%;
 }
 
 @media (max-width: 768px) {
   article {
-      padding: 0 5%;
+    padding: 0 5%;
   }
-  #an-unconventional-estimation-img-01, #an-unconventional-estimation-img-02, #an-unconventional-estimation-img-03 {
+
+  #an-unconventional-estimation-img-01,
+  #an-unconventional-estimation-img-02,
+  #an-unconventional-estimation-img-03 {
     width: 100%;
   }
 }
-=======
+
+.card {
   margin: 0.5em;
 }
->>>>>>> Stashed changes
+

@@ -31,7 +31,7 @@ h5 {
 }
 
 section {
-  padding: 4em 0;
+  padding: 4em 0 0 0;
 }
 
 .section-heading {
@@ -52,11 +52,15 @@ section {
 
   #editorial-container {
     margin-top: 100px;
-    padding: 5vh 25vh;
+    padding: 5vh;
     background-color: #e1e1e1;
     border-radius: 5px;
   }
 
+  #editorial-container p {
+    font-size: 14pt;
+    color: #666;
+  }
 }
 
 #section-headings {

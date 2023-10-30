@@ -107,9 +107,13 @@ article {
   font-size: 1rem;
   font-family: "avenir-next-regular";
 }
+
 @media (max-width: 768px) {
   article {
       padding: 0 5%;
+  }
+  #an-unconventional-estimation-img-01, #an-unconventional-estimation-img-02, #an-unconventional-estimation-img-03 {
+    width: 100%;
   }
 }
 
@@ -161,4 +165,17 @@ article {
 
 .card {
   margin: 0 0.5em;
+}
+
+#an-unconventional-estimation-img-01, #an-unconventional-estimation-img-02, #an-unconventional-estimation-img-03 {
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  article {
+      padding: 0 5%;
+  }
+  #an-unconventional-estimation-img-01, #an-unconventional-estimation-img-02, #an-unconventional-estimation-img-03 {
+    width: 100%;
+  }
 }

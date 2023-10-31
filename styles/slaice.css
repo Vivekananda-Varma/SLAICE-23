@@ -211,3 +211,11 @@ article {
   display: inline-block;
   margin-left: 5%;
 }
+
+a {
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}

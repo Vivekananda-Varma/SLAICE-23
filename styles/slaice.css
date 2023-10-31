@@ -21,8 +21,9 @@ h5 {
 }
 
 .download-button {
-  color: #fff;
-  border-color: #fff;
+  color: #818181;
+  border-width: 2px;
+  border-color: #999999;
 }
 
 section {
@@ -146,7 +147,7 @@ article {
 
 .carousel-control-prev,
 .carousel-control-next {
-  background-color: #e1e1e1;
+  background-color: #a0a0a0;
   width: 5vh;
   height: 5vh;
   border-radius: 50%;
@@ -193,6 +194,8 @@ article {
 
 .card {
   margin: 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
 }
 
 #latest-issue-banner {
